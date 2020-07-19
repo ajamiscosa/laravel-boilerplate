@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1627eabbf6cc5cb90c67be8baf943c93",
+    "content-hash": "ea6f8a38866091a28876fb60dee0aa0b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -740,6 +740,69 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "jrean/laravel-user-verification",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jrean/laravel-user-verification.git",
+                "reference": "69527fdd760cdd29853846e03504b567aac58c8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jrean/laravel-user-verification/zipball/69527fdd760cdd29853846e03504b567aac58c8a",
+                "reference": "69527fdd760cdd29853846e03504b567aac58c8a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0 || ^7.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.12",
+                "fzaninotto/faker": "^1.9",
+                "mockery/mockery": "^1.3",
+                "phpunit/phpunit": "^7.0 || ^8.0",
+                "satooshi/php-coveralls": "^2.0",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jrean\\UserVerification\\UserVerificationServiceProvider"
+                    ],
+                    "aliases": {
+                        "UserVerification": "Jrean\\UserVerification\\Facades\\UserVerification"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jrean\\UserVerification\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean Ragouin",
+                    "email": "go@askjong.com"
+                }
+            ],
+            "description": "User Email Verification For Laravel",
+            "keywords": [
+                "email activation",
+                "email verification",
+                "framework",
+                "laravel",
+                "user activation",
+                "user verification"
+            ],
+            "time": "2020-03-18T02:04:03+00:00"
         },
         {
             "name": "laravel/framework",
@@ -6578,7 +6641,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jrean/laravel-user-verification": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
