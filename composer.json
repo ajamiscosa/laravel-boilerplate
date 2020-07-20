@@ -9,13 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "anhskohbo/no-captcha": "^3.2",
+        "cviebrock/eloquent-sluggable": "^7.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
+        "jrean/laravel-user-verification": "dev-master",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "spatie/laravel-permission": "^3.13",
-        "jrean/laravel-user-verification": "dev-master"
+        "spatie/laravel-backup": "^6.11",
+        "spatie/laravel-permission": "^3.13"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
